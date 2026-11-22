@@ -82,6 +82,16 @@
 <div class="container">
 
     <h1>Task List</h1>
+    <a href="{{ route('users.index') }}"
+   style="display:inline-block;
+          background:#28a745;
+          color:white;
+          padding:10px 15px;
+          text-decoration:none;
+          border-radius:5px;
+          margin-bottom:15px;">
+    Manage Users
+</a>
 
     <div class="card">
         <h2>Add New Task</h2>
