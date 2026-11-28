@@ -1,13 +1,11 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Models\State;
 
 class StateController extends Controller
 {
-  
+
     public function index()
     {
         $states = State::all();
@@ -65,7 +63,7 @@ class StateController extends Controller
 
         return view('tasks.edit', compact('state', 'states'));
     }
-   
+
     public function update(Request $request, $id)
     {
         $request->validate([
